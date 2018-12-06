@@ -4,8 +4,10 @@
 
 This is based on:
 https://towardsdatascience.com/transfer-learning-with-convolutional-neural-networks-in-pytorch-dd09190245ce
+
 The corresponding Github repo is:
 https://github.com/WillKoehrsen/pytorch_challenge
+
 https://github.com/WillKoehrsen/pytorch_challenge/blob/master/Transfer%20Learning%20in%20PyTorch.ipynb
 
 CUDA (Compute Unified Device Architecture) is "a parallel computing platform and application programming interface (API) model created by Nvidia".
