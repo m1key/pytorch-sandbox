@@ -14,6 +14,8 @@ CUDA (Compute Unified Device Architecture) is "a parallel computing platform and
 
 ## Installation
 
+### Linux (no CUDA)
+
 I installed Anaconda 5.3.1 on Fedora Linux.
 
 Then, I installed PyTorch:
@@ -33,6 +35,19 @@ On my work laptop, I found out the graphics card using this command.
 (Look for VGA.)
 
 It is Intel Corporation HD Graphics 5500. It does not support CUDA.
+
+### Windows (CUDA)
+
+I installed Anaconda 5.3.1 on Windows 7.
+
+Then, I installed CUDA 9.0 (because at this point in time PyTorch did not work with CUDA 10.0).
+I did not install Visual Studio (even though it complained).
+
+Then, I opened Anaconda Propmt from the Start menu.
+
+> conda install pytorch -c pytorch
+
+> pip install torchvision
 
 
 ## Data
