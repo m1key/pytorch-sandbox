@@ -24,6 +24,17 @@ I don't know why this required pip install:
 
 > pip install torchsummary
 
+### CUDA
+
+On my work laptop, I found out the graphics card using this command.
+
+> lspci -v | less
+
+(Look for VGA.)
+
+It is Intel Corporation HD Graphics 5500. It does not support CUDA.
+
+
 ## Data
 
 The images used for this were downloaded from http://www.vision.caltech.edu/Image_Datasets/Caltech101/#Download
