@@ -20,6 +20,10 @@ Then, I installed PyTorch:
 
 > conda install pytorch-cpu torchvision-cpu -c pytorch
 
+I don't know why this required pip install:
+
+> pip install torchsummary
+
 ## Data
 
 The images used for this were downloaded from http://www.vision.caltech.edu/Image_Datasets/Caltech101/#Download
