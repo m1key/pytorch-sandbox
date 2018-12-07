@@ -49,6 +49,8 @@ Then, I opened Anaconda Propmt from the Start menu.
 
 > pip install torchvision
 
+> pip install torchsummary
+
 
 ## Data
 
