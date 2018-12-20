@@ -12,6 +12,14 @@ https://github.com/WillKoehrsen/pytorch_challenge/blob/master/Transfer%20Learnin
 
 CUDA (Compute Unified Device Architecture) is "a parallel computing platform and application programming interface (API) model created by Nvidia".
 
+## Performance
+
+Dell XPS, Intel HD 5500: 5.5 hours to train and re-train.
+
+My PC with NVidia 970: 9 minutes.
+
+Google Colab:
+
 ## Installation
 
 ### Linux (no CUDA)
@@ -51,6 +59,24 @@ Then, I opened Anaconda Propmt from the Start menu.
 
 > pip install torchsummary
 
+### Google Colab
+
+Firstly, it complained about the lack of pytorch. It offered to install it
+automatically, and generated something like this:
+
+> # http://pytorch.org/
+> from os.path import exists
+> from wheel.pep425tags import get_abbr_impl, get_impl_ver, get_abi_tag
+> platform = '{}{}-{}'.format(get_abbr_impl(), get_impl_ver(), get_abi_tag())
+> cuda_output = !ldconfig -p|grep cudart.so|sed -e 's/.*\.\([0-9]*\)\.\([0-9]*\)$/cu\1\2/'
+> accelerator = cuda_output[0] if exists('/dev/nvidia0') else 'cpu'
+
+> !pip install -q http://download.pytorch.org/whl/{accelerator}/torch-0.4.1-{platform}-linux_x86_64.whl torchvision
+> import torch
+
+Then, I had to clone the repo to get the data. There must be a safer way:
+
+> !git clone https://user:password@github.com/m1key/pytorch-sandbox.git
 
 ## Data
 
